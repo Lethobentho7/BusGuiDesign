@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>200</x>
-      <y>90</y>
+      <y>80</y>
       <width>411</width>
       <height>301</height>
      </rect>
@@ -27,7 +27,7 @@
      <item row="2" column="0" rowspan="2">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="homepageButton">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -62,7 +62,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="menuButton">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
            <horstretch>0</horstretch>
@@ -103,6 +103,9 @@
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
+         </property>
+         <property name="buddy">
+          <cstring>comboBox</cstring>
          </property>
         </widget>
        </item>
@@ -168,37 +171,18 @@
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
-       <widget class="QWidget" name="verticalLayoutWidget">
+       <widget class="QLabel" name="label_2">
         <property name="geometry">
          <rect>
-          <x>120</x>
-          <y>50</y>
-          <width>160</width>
-          <height>80</height>
+          <x>140</x>
+          <y>60</y>
+          <width>131</width>
+          <height>71</height>
          </rect>
         </property>
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QLabel" name="label_2">
-           <property name="frameShadow">
-            <enum>QFrame::Plain</enum>
-           </property>
-           <property name="text">
-            <string>长按输入语音内容</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="text">
-            <string>（话筒）</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
+        <property name="text">
+         <string>此处输出结果</string>
+        </property>
        </widget>
       </widget>
      </item>
